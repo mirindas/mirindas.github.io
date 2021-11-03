@@ -235,7 +235,7 @@ img:hover {
 
 /*---------------------Contact me section-------------- */
 
-#contact-section {
+ #contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,7 +243,7 @@ img:hover {
   width: 100%;
   height: 90vh;
 }
-
+/*
 .links {
   display: flex;
   justify-content: center;
@@ -254,15 +254,44 @@ img:hover {
 .profile-link {
   margin: 11px;
   color: #e4e6eb;
-  /*margin-top: 10px;
+  comment start here margin-top: 10px;
     margin-left: 10px;
-    margin-right: 15px;*/
+    margin-right: 15px; comment end here
 }
+
 .profile-link:hover {
   color: #006699;
   font-weight: bold;
   font-size: 20px;
   margin: 1px;
+} */
+
+/*----------------------New Way for contact Section---------------*/
+
+.links {
+  display: flex;
+  margin-right: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+#contact-section li{
+  float: left;
+}
+
+#contact-section a {
+  display: block;
+  /*color: rgb(211, 174, 8);*/
+  color: #e4e6eb;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#contact-section a:hover {
+  color: #006699;
+  font-weight: bold;
 }
 
 /* ----------------------End of page------------------- */
@@ -313,4 +342,10 @@ h1 {
   .learn-more {
     left: 15%;
   }
+
+  #contact-section li{
+    float: initial;
+  }
 }
+
+
