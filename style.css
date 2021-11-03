@@ -13,7 +13,7 @@
 body {
   font-family: consolas, sans-serif;
   box-sizing: border-box;
-  background: #18191a;
+  background: #222222;
   color: #e4e6eb;
   /* background-image: linear-gradient(-110deg, #0033cc,#0040ff,#3366ff,#668cff, #99b3ff); */
 }
@@ -33,14 +33,14 @@ i {
 #navbar {
   display: flex;
   justify-content: flex-end;
-  background: #242526;
+  background: #181818;
   /*background: #26373f;*/
   height: 5%;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: solid 1px;
+  /* border-bottom: solid 1px; */
   z-index: 10;
 }
 
@@ -137,7 +137,7 @@ ul {
 
 
 
-/* ---------------------Panw new shit---------------- */
+/* --------------------- New Section look---------------- */
 
 #projects-section {
   display: flex;
@@ -270,9 +270,10 @@ img:hover {
 footer {
   display: flex;
   justify-content: flex-end;
-  background-image: linear-gradient(#242526, #18191a);
+  background-image: linear-gradient(#222222, #000000);
   width: 100%;
-  height: 5vh;
+  height: 10vh;
+  bottom: 0;
 }
 
 .rights {
