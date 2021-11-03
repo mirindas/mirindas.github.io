@@ -13,7 +13,7 @@
 
 
 
-const descriptionText = "Entry Level Front-End Developer//";
+const descriptionText = "Entry Level Web Developer//";
 
 let index = 0;
 let letter = "";
