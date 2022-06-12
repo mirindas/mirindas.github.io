@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -36,16 +37,10 @@ a {
 
 i {
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 /* navigation */
-
-.testing {
-  width: 30%;
-  z-index: 2;
-  background: green;
-}
 
 #nav-list {
   display: flex;
@@ -64,11 +59,6 @@ i {
     backdrop-filter: blur(1rem);
   }
 }
-
-/* #navbar ul {
-  list-style: none;
-  display: flex;
-} */
 
 #nav-list a {
   text-decoration: none;
@@ -105,14 +95,13 @@ i {
 
 .typeEffect {
   position: relative;
-  margin: 10px;
-  /* z-index: 1; */
+  margin: 0.625rem;
 }
 
 .typeEffect::after {
   content: "";
   position: absolute;
-  width: 1px;
+  width: 0.06rem;
   height: 100%;
   border-right: 0.25rem solid white;
   animation: blink 0.7s infinite ease;
@@ -136,25 +125,6 @@ i {
 }
 
 /* ---------------------Project Section---------------- */
-
-.new-way {
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  width: auto;
-  background-color: white;
-  border: 1px solid;
-  border-radius: 0.25rem;
-  color: black;
-}
-
-.new-image {
-  height: 85%;
-  object-fit: cover;
-}
-
-/* --------------------- New Section look---------------- */
 
 #projects-section {
   display: flex;
@@ -183,7 +153,7 @@ i {
   /* margin-bottom: 1.25rem;  delete line below if you uncomment this*/
   margin: 0 1rem 1.25rem 1rem;
   text-align: center;
-  width: 32rem;
+  width: 35rem;
   height: auto;
 }
 
@@ -193,27 +163,19 @@ i {
   background-color: #18191a;
   color: #e4e6eb;
   text-align: left;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
 }
 
 .project-name {
   font-size: 1.25rem;
 }
-
-/* old
-.project-name {
-  width: 100%;
-  font-size: 1.25rem;
-  color: #e4e6eb;
-  background-color: #18191a;
-} */
 
 img {
   display: block;
   width: 100%;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 img:hover {
@@ -227,13 +189,13 @@ img:hover {
 }
 
 .project-btn {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .project-btn:hover {
   color: white;
   font-weight: bold;
-  margin: 10px;
+  margin: 0.625rem;
   text-align: center;
 }
 
@@ -242,14 +204,6 @@ img:hover {
   margin-top: 1.25rem;
   text-align: center;
 }
-
-/* old 
-.project-links {
-  display: inherit;
-  width: 100%;
-  height:7%;
-  background: red;
-} */
 
 /*---------------------Contact me section-------------- */
 
@@ -261,33 +215,11 @@ img:hover {
   width: 100%;
   height: 90vh;
 }
-/*
-.links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.profile-link {
-  margin: 11px;
-  color: #e4e6eb;
-  comment start here margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 15px; comment end here
-}
-
-.profile-link:hover {
-  color: #006699;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 1px;
-} */
 
 /*----------------------New Way for contact Section---------------*/
 
 #links {
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 ul {
@@ -302,8 +234,8 @@ ul {
   display: block;
   /*color: rgb(211, 174, 8);*/
   color: #e4e6eb;
-  padding: 10px;
-  font-size: 25px;
+  padding: 0.625rem;
+  font-size: 1.5rem;
 }
 
 #contact-section a:hover {
@@ -338,17 +270,17 @@ footer {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 #contact-section > h3 {
-  font-size: 20px;
-  margin-bottom: 25px;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
-  font-size: 50px;
-  padding-bottom: 20px;
+  font-size: 3.25rem;
+  padding-bottom: 1.25rem;
 }
 
 /* --------------------Media Querries------------ */
@@ -363,25 +295,16 @@ h1 {
   TO AFFECT OTHER H1s AS WELL */
 
   h1 {
-    font-size: 30px;
+    font-size: 1.8rem;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
-
-  /* .learn-more {
-    left: 15%;
-  } */
 
   #contact-section li {
     float: inherit;
   }
-
-  /* CHANGE LATER */
-  /* .profile-link a {
-    font-size: 10px;
-  } */
 }
 
 /* NEW media for navbar */
@@ -470,6 +393,19 @@ h1 {
   #nav-list {
     padding-block: 1rem;
     padding-inline: 5rem;
+  }
+}
+
+/* 2K & 4K testing scale */
+@media (min-width: 2560px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 44px;
   }
 }
 
