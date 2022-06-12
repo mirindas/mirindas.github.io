@@ -456,3 +456,21 @@ h1 {
   opacity: 0;
   transform: translateY(8rem);
 }
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #737272;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(67, 66, 66);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
