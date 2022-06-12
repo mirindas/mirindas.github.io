@@ -95,7 +95,7 @@ i {
 }
 
 /* UNCOMMENT WHEN YOU THINK A WAY TO HAVE BOTH RUNNING */
-/* .typeEffect {
+.typeEffect {
   position: relative;
   margin: 0.625rem;
 }
@@ -107,10 +107,10 @@ i {
   height: 100%;
   border-right: 0.25rem solid white;
   animation: blink 0.7s infinite ease;
-} */
+}
 
 /* CHANGE */
-.aboutMe {
+/* .aboutMe {
   position: relative;
   margin: 0.625rem;
   margin-top: 1rem;
@@ -124,7 +124,7 @@ i {
   height: 1.25rem;
   border-right: 0.25rem solid white;
   animation: blink 0.7s infinite ease;
-}
+} */
 
 @keyframes blink {
   0% {

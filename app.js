@@ -1,27 +1,26 @@
-// const descriptionText = "Entry Level Web Developer//";
-const aboutMeText =
-  "Technology and innovation caught my eye from a young age, and it was the field that I chose to follow. My studies first started at the Vocational High School of Sivitanidios to learn the basics of computing and later continued my studies at the Metropolitan College of Athens in the field of Computer Science which followed the University of East London program. After completing my military duties I began some self-taught coding during the 2020 pandemic. My goal is to help people by creating useful software.";
+const descriptionText = "Entry Level Web Developer//";
+//const aboutMeText ="Technology and innovation caught my eye from a young age, and it was the field that I chose to follow. My studies first started at the Vocational High School of Sivitanidios to learn the basics of computing and later continued my studies at the Metropolitan College of Athens in the field of Computer Science which followed the University of East London program. After completing my military duties I began some self-taught coding during the 2020 pandemic. My goal is to help people by creating useful software.";
 
-//let index = 0;
-let indexAbout = 0;
-//let letter = "";
-let about = "";
+let index = 0;
+//let indexAbout = 0;
+let letter = "";
+//let about = "";
 
-// (function typeEffect() {
-//   letter = descriptionText.slice(0, ++index);
+(function typeEffect() {
+  letter = descriptionText.slice(0, ++index);
 
-//   document.querySelector(".typeEffect").textContent = letter;
+  document.querySelector(".typeEffect").textContent = letter;
 
-//   setTimeout(typeEffect, 150);
-// })();
-
-(function typeEffectAbout() {
-  about = aboutMeText.slice(0, ++indexAbout);
-
-  document.querySelector(".aboutMe").textContent = about;
-
-  setTimeout(typeEffectAbout, 55);
+  setTimeout(typeEffect, 150);
 })();
+
+// (function typeEffectAbout() {
+//   about = aboutMeText.slice(0, ++indexAbout);
+
+//   document.querySelector(".aboutMe").textContent = about;
+
+//   setTimeout(typeEffectAbout, 55);
+// })();
 
 //setTimeout(typeEffectAbout, 4000);
 
