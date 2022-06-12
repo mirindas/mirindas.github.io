@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panos Christodoulou Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/protfolio-icon.png" />
+    <link rel="stylesheet" href="style.css" />    
     <script
       src="https://kit.fontawesome.com/761807c58a.js"
       crossorigin="anonymous"
@@ -13,14 +14,20 @@
   <body>
     <!-- Navigation Section -->
     <header>
+
+      
     <nav id="navbar">
-      <ul id="nav-list">
+      <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false"><span class="sr-only">Menu</span></button>
+      <div class="testing"></div>
+      <ul id="nav-list" data-visible="false">
         <li><a href="#welcome-section">About</a></li>
         <li><a href="#projects-section">Projects</a></li>
         <li><a href="#contact-section">Contact</a></li>
-      </ul>
+      </ul>     
     </nav>
   </header>
+
+  <!-- Welcome Section -->
 
     <section id="welcome-section">
       <div class="welcome">
@@ -37,8 +44,8 @@
 
     <!-- Projects Section -->
 
-    <section id="projects-section">
-      <h1 class="proj-sect-title">My Projects</h1>
+    <section class="section" id="projects-section">
+      <h1 class="proj-sect-title">&lt;Projects&gt;</h1>
 
       <!-- Creating a panel for the projects -->
       <!-- Each project contains a Title,image and 2 links -->
@@ -164,16 +171,17 @@
           </div>
         </div>
       </div>
+      <h1 class="proj-sect-title">&lt;Projects/&gt;</h1>
     </section>
 
     <!-- Contact Section and Footer -->
 
-    <section id="contact-section">
+    <section class="section" id="contact-section">
       <h1>Interested?</h1>
       <h3>Feel free to reach to me here</h3>
       <span class="tip">
       <h3 id="mymail">panagiotis.christodoulou97@gmail.com</h3>
-      <span class="tip-msg">email copied</span>
+      <span class="tip-msg">Email copied</span>
       </span>
       
       <!-- Creating Redirect buttons for GitHub etc -->
@@ -223,7 +231,6 @@
     <footer>
       <div class="rights">
         <p>Portfolio created by Panos Christodoulou</p>
-        <p>Rights reserved</p>
       </div>
     </footer>
     <script src="app.js"></script>
