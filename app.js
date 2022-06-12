@@ -42,7 +42,7 @@ const popUpStyle = () => {
 
   // temporay solution for mobile / small screens
   if (viewportWidth <= 730) {
-    message.style.right = "100px";
+    message.style.right = "150px";
     message.style.opacity = "1";
   }
   // return `
