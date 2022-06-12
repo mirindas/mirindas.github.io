@@ -270,7 +270,7 @@ footer {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  margin-top: 2.5rem;
+  justify-content: end;
 }
 
 #contact-section > h3 {
