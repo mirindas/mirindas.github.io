@@ -14,7 +14,6 @@ let letter = "";
 let getMail = document.getElementById("mymail");
 let viewportWidth = window.innerWidth;
 getMail.onclick = () => {
-  console.log((viewportWidth = window.innerWidth));
   copyText();
   // getMail = popUpStyle(); goes with commented section in popUpStyle (previous implementation)
   popUpStyle();
@@ -57,10 +56,7 @@ const allSections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) {
-    console.log("its intersecting");
-    return;
-  }
+  if (!entry.isIntersecting) return;
 
   entry.target.classList.remove("section--hidden");
   observer.unobserve(entry.target);
@@ -72,7 +68,6 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 });
 
 allSections.forEach(function (section) {
-  console.log("section reveal checker");
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
