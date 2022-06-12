@@ -16,6 +16,10 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: consolas, sans-serif;
   box-sizing: border-box;
@@ -37,17 +41,12 @@ i {
 
 /* navigation */
 
-/* primary header */
-#navbar {
-}
-
 .testing {
   width: 30%;
   z-index: 2;
   background: green;
 }
 
-/* primary navigation */
 #nav-list {
   display: flex;
   align-items: center;
@@ -61,15 +60,15 @@ i {
 
 @supports (backdrop-filter: blur(2rem)) {
   #nav-list {
-    background: hsl(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(2rem);
+    background: hsl(0, 0%, 50%, 0.1);
+    backdrop-filter: blur(1rem);
   }
 }
 
-#navbar ul {
+/* #navbar ul {
   list-style: none;
   display: flex;
-}
+} */
 
 #nav-list a {
   text-decoration: none;

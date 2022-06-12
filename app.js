@@ -13,6 +13,7 @@ let letter = "";
 
 let getMail = document.getElementById("mymail");
 let viewportWidth = window.innerWidth;
+
 getMail.onclick = () => {
   copyText();
   // getMail = popUpStyle(); goes with commented section in popUpStyle (previous implementation)
