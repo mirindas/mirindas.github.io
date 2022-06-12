@@ -89,11 +89,13 @@ i {
 }
 
 .welcome {
-  width: 100%;
-  text-align: center;
+  width: 50%;
+  text-align: center !important;
+  justify-content: center !important;
 }
 
-.typeEffect {
+/* UNCOMMENT WHEN YOU THINK A WAY TO HAVE BOTH RUNNING */
+/* .typeEffect {
   position: relative;
   margin: 0.625rem;
 }
@@ -103,6 +105,23 @@ i {
   position: absolute;
   width: 0.06rem;
   height: 100%;
+  border-right: 0.25rem solid white;
+  animation: blink 0.7s infinite ease;
+} */
+
+/* CHANGE */
+.aboutMe {
+  position: relative;
+  margin: 0.625rem;
+  margin-top: 1rem;
+  word-wrap: break-word;
+}
+
+.aboutMe::after {
+  content: "";
+  position: absolute;
+  width: 0.06rem;
+  height: 1.25rem;
   border-right: 0.25rem solid white;
   animation: blink 0.7s infinite ease;
 }
