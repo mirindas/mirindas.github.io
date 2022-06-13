@@ -104,7 +104,7 @@ i {
   content: "";
   position: absolute;
   width: 0.06rem;
-  height: 1.25rem;
+  height: 1.7rem;
   border-right: 0.25rem solid white;
   animation: blink 0.7s infinite ease;
 }
@@ -151,7 +151,13 @@ i {
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-color: #26373f;
+  /* background-color: #26373f; */
+  background: linear-gradient(
+    198deg,
+    rgba(61, 85, 96, 1) 0%,
+    rgba(32, 44, 50, 1) 35%,
+    rgba(12, 27, 34, 1) 100%
+  );
 }
 
 .project-grid {
@@ -198,7 +204,8 @@ img {
 }
 
 img:hover {
-  filter: brightness(150%);
+  /* filter: brightness(120%); */
+  transition: brightness(120%) 0.3s ease-in-out;
 }
 
 .sample-image {
@@ -317,7 +324,7 @@ h1 {
     font-size: 1.8rem;
   }
 
-  h3 {
+  h2 {
     font-size: 1.125rem;
   }
 
