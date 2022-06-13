@@ -147,7 +147,7 @@ i {
 
 #projects-section {
   display: flex;
-  width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -307,6 +307,7 @@ footer {
 h1 {
   font-size: 3.25rem;
   padding-bottom: 1.25rem;
+  /* font-size: clamp(1.5rem, 3vw, 3.25rem); */
 }
 
 /* --------------------Media Querries------------ */
@@ -383,6 +384,13 @@ h1 {
   }
 }
 
+h3 {
+  /* font-size: 0.8rem !important; */
+  font-size: clamp(0.8rem, 3vw, 1.5rem) !important;
+}
+/* @media (max-width: 400px) {
+ 
+} */
 @media (min-width: 768px) {
   #nav-list {
     padding-block: 2rem;

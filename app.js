@@ -103,3 +103,28 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-expanded", false);
   }
 });
+
+// FIX SECTION CLICK SCROLL EFFECT
+
+const projBtn = document.querySelector("#proj-sect-btn");
+
+let counter = 0;
+
+projBtn.addEventListener("click", function () {
+  console.log("bfore", counter);
+  counter++;
+  console.log("after", counter);
+
+  // setTimeout(projBtn.click(), 5000);
+
+  if (counter === 1) {
+    console.log("inside", counter);
+    setTimeout(waitForClick, 800);
+  } else {
+    return;
+  }
+});
+
+const waitForClick = function () {
+  projBtn.click();
+};
