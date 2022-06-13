@@ -203,10 +203,10 @@ img {
   border-top-right-radius: 0.75rem;
 }
 
-img:hover {
+/* img:hover {
   filter: brightness(120%);
-  /* transition: brightness(120%) 0.3s ease-in-out; */
-}
+  transition: brightness(120%) 0.3s ease-in-out;
+} */
 
 .sample-image {
   width: 100%;
