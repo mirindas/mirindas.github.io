@@ -204,8 +204,8 @@ img {
 }
 
 img:hover {
-  /* filter: brightness(120%); */
-  transition: brightness(120%) 0.3s ease-in-out;
+  filter: brightness(120%);
+  /* transition: brightness(120%) 0.3s ease-in-out; */
 }
 
 .sample-image {
